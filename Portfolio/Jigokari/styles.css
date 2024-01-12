@@ -1,0 +1,53 @@
+.resumen {
+    background: url(../img/Jigokari/Inicio.jpg);
+}
+
+.equipo {
+    background: url(../img/Jigokari/Equipo.jpg);
+}
+
+/*  */
+.skills .skill .example1 {
+    width: 0%;
+    animation: 2s example1 forwards;
+}
+
+@keyframes example1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+.skills .skill .example2 {
+    width: 0%;
+    animation: 2s example2 forwards;
+}
+
+@keyframes example2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+.skills .skill .example3 {
+    width: 0%;
+    animation: 2s example3 forwards;
+}
+
+@keyframes example3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+

@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rowdies:wght@300&display=swap');
+
+@font-face {
+    font-family: Concert One;
+    src: url('../Fonts/ConcertOne-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: Rowdies;
+    font-size: 48px;
+}
+h2{
+    font-family: Concert One;
+    font-size: 28px;
+}
+/* MENU */
+.contenedor-header {
+    background: linear-gradient(to top, #ffd900f6, rgb(128, 108, 0));
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: sticky;
+}
+
+.contenedor-header header {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.contenedor-header header .back:hover {
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+.contenedor-header header .back {
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: #000000;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.contenedor-header header .back:hover {
+    color: #996900;
+    cursor: pointer;
+}
+
+.contenedor-header header nav:hover {
+    transition: .2s;
+    transform: scale(1.05);
+}
+
+.contenedor-header header nav a {
+    text-align: none;
+    color: #000000;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .2s;
+    text-decoration: underline;
+    font-family: 'Concert One';
+    font-size: 24px;
+}
+
+.contenedor-header header nav a:hover {
+    color: #6e4b00;
+}
+
+/*Resumen*/
+.resumen {
+    padding: 0.5em 2em;
+    background-color: #221a009d;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+}
+.resumen .texto span{
+    color: #ffd900;
+}
+.resumen .texto span-{
+    color: #fffd9e;
+}
+.resumen .inicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.video, .texto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-top: 2em;
+}
+
+.video {
+    flex-basis: 50%;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+    min-width: 360px;
+    border: 2px solid #ffd900;
+}
+
+.texto {
+    flex-basis: min-content;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.resumen .tags .contenedor-componentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.resumen .tags .contenedor-componentes .tipo {
+    width: 100px;
+    height: 100px;
+    background-color: #ffd900;
+    color: #000000;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.resumen .tags .contenedor-componentes .tipo i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Mi participación */
+.participacion {
+    padding: 2em;
+    background-color: #2c2200;
+    color: #fff;
+}
+
+.participacion .contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2em;
+    justify-content: center;
+    align-content: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.participacion h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.participacion h2 {
+    text-align: center;
+}
+
+.desarrollo,
+.roles {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+}
+
+/* controlador de porcentajes */
+.skills {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .skill {
+    width: 100%;
+}
+
+.skills .skill>span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.skills .skill .barra-skill {
+    height: 8px;
+    width: 100%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso {
+    background-color: #ffd900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 25px;
+    width: 40px;
+    color: #131517;
+    background-color: #ffd900;
+    border-radius: 50px;
+    line-height: 25px;
+    text-align: center;
+    top: -10px;
+    right: -12px;
+    font-size: 12px;
+}
+
+
+
+/* Responsive sección PARTICIPACIÓN */
+@media screen and (max-width:700px) {
+
+    .participacion .contenido {
+        flex-wrap: wrap;
+
+    }
+}
+
+/* Sección de capturas */
+.capturas {
+    padding: 2em;
+    background-color: #161100;
+    color: #fff;
+}
+
+.capturas .contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2em;
+    justify-content: center;
+    align-content: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.capturas h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.capturas h2 {
+    text-align: center;
+}
+
+.proceso,
+.acabado {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    align-items: center;
+}
+/* SLIDERS */
+.slider {
+    /* Se posiciona de forma relativa para que la imagen y todos los botones del slider lo tomen como referencia */
+    position: relative;
+    /* Se oculta todo lo que sobresale ya que las imágenes son más grandes que el slider */
+    overflow: hidden;
+    width: 90%;
+    border: 1px solid #ffd900;
+    display: flex;
+    transition: all 2s;
+}
+
+.slider .sliderGroup {
+    /* Se hace un bloque que ocupa todo el slider para poner la banda con la imagen, cada imagen tiene una banda distinta */
+    width: 100%;
+    height: 100%;
+}
+
+.slider .sliderGroup img {
+    /* Se redimensiona la imagen para que ocupe todo el largo del slider */
+    width: 100%;
+    height: 100%;
+}
+
+.sliderSelector {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.sliderSelector i {
+    cursor: pointer;
+}
+
+.sliderSelector i+i {
+    /* Margen entre cada selector, si en el html se separan en diferentes lineas los iconos se pone un espacio en medio el cual se puede seleccionar con el raton, de esta forma se evita eso */
+    margin-left: 0.3em;
+}
+
+.slideRight {
+    position: absolute;
+    /* Misma altura del texto, un poco por encima del medio */
+    top: 40%;
+    /* Casi pegado al borde derecho del slider */
+    color: white;
+    cursor: pointer;
+    right: 5%;
+}
+
+.slideLeft {
+    position: absolute;
+    top: 40%;
+    /* Casi pegado al borde izquierdo del slider */
+    color: white;
+    cursor: pointer;
+    left: 5%;
+}
+@media screen and (max-width:700px) {
+
+    .capturas .contenido {
+        flex-wrap: wrap;
+
+    }
+
+    .capturas .slider {
+        width: 100%;
+    }
+
+}
+
+/* Equipo */
+.equipo {
+    padding: 2em;
+    background-color: #2c220086;
+    color: #fff;
+    background-size: cover;
+    
+}
+
+.equipo h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.equipo .contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2em;
+    justify-content: center;
+    align-content: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.equipo .componentes {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+}
+
+.equipo .contacto {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    text-align: center;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 1em;
+    border: none;
+    background-color: #161100;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    transition: all 1s;
+}
+
+.contacto button:hover {
+    color: #000000;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffd900;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+.equipo .contenido .componentes .contenedor-componentes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipo .contenido .componentes .contenedor-componentes .miembros {
+    width: 100px;
+    height: 100px;
+    background-color: #161100;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.equipo .contenido .componentes .contenedor-componentes .miembros:hover {
+    background-color: #ffd900;
+    color: #000000;
+    cursor: pointer;
+}
+
+.equipo .contenido .componentes .contenedor-componentes .miembros i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.equipo .contenido .componentes .marca {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: min-content;
+    display: flex;
+}
+
+.equipo .contenido .componentes .marca img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (max-width:700px) {
+
+    .equipo .contenido {
+        flex-wrap: wrap;
+
+    }
+
+    .equipo .contenido .contacto {
+        text-align: center;
+    }
+    .contacto .col input,
+.contacto .col textarea {
+    text-align: center;
+}
+}
+
+/*Footer*/
+
+footer {
+    background-color: #161100;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffd900;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+footer .arriba:hover {
+    background-color: #000000;
+    color: #ffd900;
+    border: 1px solid#ffd900;
+    cursor: pointer;
+}
+

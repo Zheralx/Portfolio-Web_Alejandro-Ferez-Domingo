@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Web - Alejandro Férez Domingo</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="../img/Icono_Zheralx.png" />
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="back" onclick="history.back()">
+                <i class="fa-solid fa-reply"></i>
+            </div>
+            <nav id="nav">
+                <a target="_blank" href="https://cabra-psicotica.itch.io/that-shadow-in-the-mall">Jigokari</a>
+            </nav>
+        </header>
+    </div>
+    <div class="resumen">
+        <div class="inicio">
+            <div class="video">
+                <div>
+                    <video controls>
+                        <source src="../img/TSITM/Video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="texto">
+                <div>Lorem ipsum, dolor <span>sit amet consectetur</span> <span->adipisicing eli</span->adipisicing
+                    elit. Dolores in, quo exercitationem quos nemo
+                    amet
+                    nam iusto, consequuntur perspiciatis sapiente reprehenderit recusandae officia iste architecto id
+                    vero
+                    ut fugit. Nisi.</div>
+            </div>
+        </div>
+        <div class="tags">
+            <div class="contenedor-componentes">
+                <div class="tipo">
+                    <i class="fa-solid fa-question"></i>
+                    <span>EXAMPLE</span>
+                </div>
+                <div class="tipo">
+                    <i class="fa-solid fa-question"></i>
+                    <span>EXAMPLE</span>
+                </div>
+                <div class="tipo">
+                    <i class="fa-solid fa-question"></i>
+                    <span>EXAMPLE</span>
+                </div>
+                <div class="tipo">
+                    <i class="fa-solid fa-question"></i>
+                    <span>EXAMPLE</span>
+                </div>
+                <div class="tipo">
+                    <i class="fa-solid fa-question"></i>
+                    <span>EXAMPLE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MI PARTICIPACIÓN -->
+    <div class="participacion">
+        <div class="titulo">
+            <h1>Mi Participación</h1>
+        </div>
+        <div class="contenido">
+            <div class="desarrollo">
+                <h2>Desarrollo</h2>
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus eaque dignissimos perferendis
+                    repellendus pariatur exercitationem magni, similique doloribus quis voluptas officiis cumque culpa!
+                    Aut
+                    accusamus quidem laboriosam voluptas quia aliquam.</div>
+            </div>
+            <div class="roles">
+                <h2>Roles</h2>
+                <div id="skills" class="skills">
+                    <div class="skill">
+                        <span>Example 1</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>X%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Example 2</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>X%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Example 3</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>X%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Capturas -->
+    <div class="capturas">
+        <div class="titulo">
+            <h1>Capturas</h1>
+        </div>
+        <div class="contenido">
+            <div class="proceso">
+                <h2>Proceso</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit quas vel cumque
+                    necessitatibus maiores totam rem facilis amet animi nisi ipsam, corporis laudantium nulla quidem
+                    itaque sed accusamus hic.</p>
+                <div class="slider" id="slider1">
+                    <!-- Imagen 1 -->
+                    <div class="sliderGroup">
+                        <img src="../img/Jigokari/1-1.png">
+                    </div>
+
+                    <!-- Imagen 2 -->
+                    <div class="sliderGroup" hidden>
+                        <img src="../img/Jigokari/1-2.png">
+                    </div>
+
+                    <!-- Imagen 3 -->
+                    <div class="sliderGroup" hidden>
+                        <img src="../img/Jigokari/1-3.png">
+                    </div>
+
+                    <!-- Imagen 4 -->
+                    <div class="sliderGroup" hidden>
+                        <img src="../img/Jigokari/1-4.png">
+                    </div>
+
+                    <div class="sliderSelector">
+                        <!-- Si se separa en diferentes líneas para formatearlo se queda un espacio en blanco entre cada círculo, ese espacio puede ser seleccionado con el raton -->
+                        <i class="fas fa-circle" value="0"></i><i class="far fa-circle" value="1"></i><i
+                            class="far fa-circle" value="2"></i><i class="far fa-circle" value="3"></i>
+                    </div>
+
+
+                    <i class="fas fa-caret-left fa-3x slideLeft"></i>
+                    <i class="fas fa-caret-right fa-3x slideRight"></i>
+
+                </div>
+            </div>
+            <div class="acabado">
+                <h2>Acabado</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam repudiandae nisi maiores obcaecati.
+                    Accusantium ab natus, veniam pariatur dolores, tenetur soluta atque eius amet sed quos odio? In, at
+                    repellat?</p>
+                <div class="slider" id="slider2">
+                    <!-- Imagen 1 -->
+                    <div class="sliderGroup">
+                        <img src="../img/Jigokari/2-1.png">
+                    </div>
+
+                    <!-- Imagen 2 -->
+                    <div class="sliderGroup" hidden>
+                        <img src="../img/Jigokari/2-2.png">
+                    </div>
+
+                    <!-- Imagen 3 -->
+                    <div class="sliderGroup" hidden>
+                        <img src="../img/Jigokari/2-4.png">
+                    </div>
+
+                    <!-- Imagen 4 -->
+                    <div class="sliderGroup" hidden>
+                        <img src="../img/Jigokari/2-4.png">
+                    </div>
+
+                    <div class="sliderSelector">
+                        <!-- Si se separa en diferentes líneas para formatearlo se queda un espacio en blanco entre cada círculo, ese espacio puede ser seleccionado con el raton -->
+                        <i class="fas fa-circle" value="0"></i><i class="far fa-circle" value="1"></i><i
+                            class="far fa-circle" value="2"></i><i class="far fa-circle" value="3"></i>
+                    </div>
+
+                    <i class="fas fa-caret-left fa-3x slideLeft"></i>
+                    <i class="fas fa-caret-right fa-3x slideRight"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Equipo -->
+    <div class="equipo">
+        <div class="titulo">
+            <h1>Equipo</h1>
+        </div>
+        <div class="contenido">
+            <div class="componentes">
+                <h2>Equipo de Desarrollo</h2>
+                <div class="contenedor-componentes">
+                    <div class="miembros">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>ARTISTA</span>
+                    </div>
+                    <div class="miembros">
+                        <i class="fa-solid fa-code"></i>
+                        <span>PROG</span>
+                    </div>
+                    <div class="miembros">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>DISEÑADOR</span>
+                    </div>
+                    <div class="miembros">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>AUDIO</span>
+                    </div>
+                    <div class="miembros">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>PRODUCTOR</span>
+                    </div>
+                </div>
+                <div class="marca">
+                    <img src="../img/Jigokari/Logo.png">
+                </div>
+            </div>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Número de teléfono">
+                        <input type="text" placeholder="Correo electrónico">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div onclick=history.back()>
+            <a class="arriba">
+                <i class="fa-solid fa-reply"></i>
+            </a>
+        </div>
+        <div class="redes">
+            <a target="_blank" title=" LinkedIn "
+                href="https://www.linkedin.com/in/alejandro-férez-domingo-662569255/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" title=" Discord " href="#"><i class="fa-brands fa-discord"></i></a>
+            <a target="_blank" title=" Instagram " href="https://www.instagram.com/zheralx_official/"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" title=" Itch.io " href="https://zheralx.itch.io"><i class="fa-brands fa-itch-io"></i></a>
+            <a target="_blank" title=" X-Twitter " href="https://twitter.com/_Alejandro_FD_"><i
+                    class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+.resumen {
+    background: url(../img/TSITM/Inicio.jpg);
+    background-position: center;
+}
+
+.equipo {
+    background: url(../img/TSITM/Equipo.jpg);
+}
+
+/*  */
+.skills .skill .sonido {
+    width: 0%;
+    animation: 2s sonido forwards;
+}
+
+@keyframes sonido {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+.skills .skill .niveles {
+    width: 0%;
+    animation: 2s niveles forwards;
+}
+
+@keyframes niveles {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .skill .montaje {
+    width: 0%;
+    animation: 2s montaje forwards;
+}
+
+@keyframes montaje {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .iluminacion {
+    width: 0%;
+    animation: 2s iluminacion forwards;
+}
+
+@keyframes iluminacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.skills .skill .narrativo {
+    width: 0%;
+    animation: 2s narrativo forwards;
+}
+
+@keyframes narrativo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}

@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+nav {
+    margin-top: 0;
+    position: fixed;
+    width: 100%;
+    height: 7em;
+    background-image: url(../img/barra.png);
+    background-size: contain;
+    background-position: center;
+    z-index: 2;
+}
+
+nav > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > ul > li {
+    list-style: none;
+    display: flex;
+    align-content: center;
+}
+
+.SangríaRubén{
+    padding-left: 75px;
+}
+    
+nav > ul > li > a {
+    padding: 1.5em;
+    text-decoration: none;
+    color:white;
+    font-size: 150%;
+    font-family: 'Russo One', sans-serif;
+
+}
+
+.Titulo {
+    font-family: 'Gugi', cursive;
+    color:chartreuse;
+}
+
+nav > ul > li > a:hover {
+    font-weight: bold;
+}
+
+section#Rythm_Gangsters {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-image: url(../img/Ilustracion_sin_titulo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#Carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:url(../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.Carousel1{
+    position: absolute;
+    top: 7em;
+    left: 3em;
+    width: 45%;
+    height: 45%;
+    text-align: center;
+    
+}
+.Carousel2 {
+    position: absolute;
+    bottom: 2em;
+    right: 3em;
+    width: 45%;
+    height: 45%;
+    text-align: center;
+}
+
+.Text1 {
+    position: absolute;
+    top: 7em;
+    right: 2.5%;
+    width: 45%;
+    height: 45%;
+
+}
+
+.Text1 > h2 {
+    font-family: 'Russo One', sans-serif;
+    color:aqua;
+}
+
+.Text1 > p {
+    font-family: 'Comfortaa', cursive;
+        color: white;
+}
+
+.Text2 {
+    position: absolute;
+    bottom: -7.5%;
+    left: 7.5%;
+    width: 45%;
+    height: 45%;
+}
+
+.Text2 > h2 {
+    font-family: 'Russo One', sans-serif;
+    color:fuchsia;
+}
+
+.Text2 > p {
+    font-family: 'Comfortaa', cursive;
+        color: white;
+}
+
+section#Resumen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    background-image:url(../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+    padding-top: 5em;
+}
+
+section#Resumen > div > h2 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    font-size: 200%;
+    font-family: 'Russo One', sans-serif;
+    color: chartreuse;
+}
+
+section#Resumen > div > p {
+    font-size: 150%;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+section#Resumen > div > p-child(4) {
+ padding-bottom: 2em;   
+}
+
+section#Especificaciones {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    background-image:url(../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+    padding-top: 5em;
+}
+
+section#Especificaciones > div > h2 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+    padding-top: 3em;
+    font-size: 200%;
+    font-family: 'Russo One', sans-serif;
+    color: chartreuse;
+    
+}
+
+section#Especificaciones > div > p {
+    font-size: 150%;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+section#Transmedia {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    padding-top: 5em;
+    background-image:url(../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+section#Transmedia > div > h2 {
+    margin: 1em;
+    font-size: 200%;
+    text-decoration: underline;
+    font-family: 'Russo One', sans-serif;
+    color: chartreuse;
+}
+
+.Video > iframe {
+    width: 75%;
+    height: 75vh;
+}
+
+section#Contactos {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    padding-top: 5em;
+    background-image:url(../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+section#Contactos > div > div > a {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+section#Contactos > div > div > a:hover {
+    font-weight: bold;
+    justify-content: space-around;
+
+}
+
+section#Contactos > div > h2 {
+    font-family: 'Russo One', sans-serif;
+    color: chartreuse;
+}
+
+.Carlos {
+    position: absolute;
+    width: 45%;
+    height: 45vh;
+    padding: 3em;
+    font-size: 150%;
+}
+
+.Eva {
+    position: absolute;
+    width: 45%;
+    height: 45vh;
+    padding: 3em;
+    right: 0;
+    font-size: 150%;
+    
+}
+
+.Alex {
+    position: absolute;
+    width: 45%;
+    height: 45vh;
+    padding: 3em;
+    bottom: 0;
+    font-size: 150%;
+}
+
+.Hugo {
+    position: absolute;
+    width: 45%;
+    height: 45vh;
+    padding: 3em;
+    bottom: 0;
+    right: 0;
+    font-size: 150%;
+}
+
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 0;
+  }
+  30% {
+    left: -100%;
+  }
+  55% {
+    left: -100%;
+  }
+  60% {
+    left: -200%;
+  }
+  85% {
+    left: -200%;
+  }
+  100% {
+    left: 0;
+  }
+}
+}
+
+@media screen and (max-width: 414px){
+    
+}
