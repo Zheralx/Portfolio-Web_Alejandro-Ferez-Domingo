@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Web - Alejandro Férez Domingo</title>
+    <link rel="stylesheet" href="./Main/styles.css"> <!-- Referencia al archivo .css para los estilos -->
+    <link rel="shortcut icon" href="./img/Icono_Zheralx.png" /> <!-- Pone el icono en la pestaña del navegador -->
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio"><img src="./img/Icono_Zheralx.png" alt="Logo de la página"></a>
+                <!-- El icono de la navbar, al hacer click dirige al inicio -->
+            </div>
+            <nav id="nav">
+                <ul> <!-- Los títulos de la navbar, al hacer click en éstos títulos, gracias a la función [onclick] la páigina se dirige a la sección con la ID correspondiente -->
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <!-- Función que muestra el menú cuando se muestra el icono responsive -->
+                <i class="fa-solid fa-bars"></i> <!-- icono sacado de la página de https://fontawesome.com/ -->
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./img/Foto.png" alt="Mi imagen">
+            </div>
+            <h1>ALEJANDRO FÉREZ</h1>
+            <h2>Diseñador de Videojuegos</h2>
+            <!-- Sección de redes, al hacer click enlaza a su respectiva red en una página nueva -->
+            <div class="redes">
+                <a target="_blank" title=" LinkedIn "
+                    href="https://www.linkedin.com/in/alejandro-férez-domingo-662569255/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" title=" Discord " href="#"><i class="fa-brands fa-discord"></i></a>
+                <a target="_blank" title=" Instagram " href="https://www.instagram.com/zheralx_official/"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" title=" Itch.io " href="https://zheralx.itch.io"><i
+                        class="fa-brands fa-itch-io"></i></a>
+                <a target="_blank" title=" X-Twitter " href="https://twitter.com/_Alejandro_FD_"><i
+                        class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Buenas, soy Alejandro Férez,</span> Un fanático del diseño de videojuegos que busca expandir su
+                conocimiento participando en miles de proyectos interesantes y dándoles todo mi apoyo junto a los
+                compañeros de equipo que pueda conocer en ellos.</p>
+            <p>Mi especialidad es el diseño, especialmente interesado en <span>level design, UX y Story Building,</span>
+                aunque como aún soy algo novato en éste mundillo, estoy abierto a aprender cualquier cosa que haga falta
+                en tu equipo y así poder ver si soy afín a esos conocimientos. Si necesitas un diseñador en tu equipo,
+                puedes contactarme a través de las webs que te facilitaré en ésta página, espero tu contacto ;)</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            06-02-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +34-684 09 29 81
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            alferez.contact@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            C/Cruz del Carnero 12, Madrid
+                        </li>
+                        <li>
+                            <strong>Puesto actual</strong>
+                            <span> Diseño de Videojuegos </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <!-- Sección que contiene los cuadros con los intereses, con sus respectivos iconos -->
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-paintbrush"></i>
+                            <span>DIBUJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-hippo"></i>
+                            <span>ANIMALES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-comments"></i>
+                            <span>CHARLAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-video"></i>
+                            <span>GRABAR</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Botón que abre un pdf en una nueva página  -->
+            <a class="cv" target="_blank" href="./Documentos/CV.pdf"> <button>
+                    Ver CV <i class="fa-regular fa-eye"></i>
+                    <span class="overlay"></span>
+                </button> </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <!-- SKILL 1 -->
+                    <div class="skill">
+                        <span>Unity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL 2 -->
+                    <div class="skill">
+                        <span>Unreal Engine 5</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL 3 -->
+                    <div class="skill">
+                        <span>Procreate</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL 4 -->
+                    <div class="skill">
+                        <span>Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL 5 -->
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <!-- SKILL 1 -->
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL 2 -->
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL 3 -->
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL 4 -->
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL 5 -->
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <!-- Sección izquierda -->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <!-- ESTUDIO 1 -->
+                    <div class="item izq">
+                        <h4>Diseño y Desarrollo de Videojuegos</h4>
+                        <span class="casa">UDIT - Universidad de Desarrollo, Innovación y Tecnología</span>
+                        <span class="fecha">2021 - Actualidad</span>
+                        <p>Estudiante de Diseño y Desarrollo de Videojuegos con especialidad en Diseño.</p>
+                        <p>Actualmente estoy cursando mi 3er año de carrera, intentando aprender lo máximo posible y
+                            asistiendo a miles de eventos que me hacen aprender más cada día sobre ésta industria.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <!-- ESTUDIO 2 -->
+                    <div class="item izq">
+                        <h4>Música</h4>
+                        <span class="casa">Conservatori professional de MÚSICA de Felanitx</span>
+                        <span class="fecha">2013 - 2018</span>
+                        <p>Estudiante de Grado Elemental, Trompeta, Piano y Coral durante 5 años.</p>
+                        <p>Fue un estudio complementario a la educación obligatoria, donde adquirí ciertos conocimientos
+                            sobre música y comencé a participar en la banda de Felanitx con mis conocimientos de
+                            trompetista.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sección Derecha -->
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <!-- EXPERIENCIA 1 -->
+                    <div class="item der">
+                        <h4>Camarero</h4>
+                        <span class="casa">Villaplana Catering</span>
+                        <span class="fecha">2020 - 2023</span>
+                        <p>Camarero a tiempo parcial durante mis primeros 2 cursos de carrera y el primer semestre del
+                            3º.</p>
+                        <p>El trabajo consistía en asistir a eventos (ferias, bodas, partidos, etc.) y realizar mi labor
+                            de camararero junto a un equipo que variaba de 10 a 25 personas según el evento.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- EXPERIENCIA 2 -->
+                    <div class="item der">
+                        <h4>Camarero</h4>
+                        <span class="casa">Restaurante Rocador</span>
+                        <span class="fecha">Julio 2023</span>
+                        <p>Camarero a jornada completa, 6 días semanales durante la temporada de verano.</p>
+                        <p>Trabajo de atención al cliente en un chiringuito a pie de playa en Mallorca, también tuve que
+                            realizar ligeras gestiones del equipo cuando faltaba el monitor.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- EXPERIENCIA 3 -->
+                    <div class="item der">
+                        <h4>Botones</h4>
+                        <span class="casa">Hotel RobinsonClub-Cala Serena</span>
+                        <span class="fecha">Junio 2021</span>
+                        <p>Botones a jornada completa, 5 días semanales durante la temporada de verano.</p>
+                        <p>Mi primer trabajo, el cual consistía en cargar con el equipaje de los clientes y realizar
+                            ligeros trabajos de mantenimiento del hotel (limpiar, reponer material, ayudar a otros
+                            sectores, etc.)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <!-- PORTFOLIO 1: That Shadow In The Mall -->
+                <a href="./Portfolio/TSITM/index.html">
+                    <div class="proyecto">
+                        <img src="./img/p1.jpg" alt="">
+                        <div class="overlay" id="TSITM">
+                            <h3>TSITM</h3>
+                            <p>Videojuego</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- PORTFOLIO 2: Jigokari -->
+                <a href="./Portfolio/Jigokari/index.html">
+                    <div class="proyecto">
+                        <img src="./img/p2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Jigokari</h3>
+                            <p>Videojuego</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- PORFOLIO 3: Nyctophobia -->
+                    <div class="proyecto">
+                        <img src="./img/p3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Nyctophobia</h3>
+                            <p>Videojuego</p>
+                        </div>
+                    </div>
+                <!-- PORTFOLIO 4: Niveles -->
+                <div class="proyecto">
+                    <img src="./img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Plataformas</h3>
+                        <p>Diseño de Niveles</p>
+                    </div>
+                </div>
+                <!-- PORTFOLIO 5: Fractura -->
+                <div class="proyecto">
+                    <img src="./img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Fractura</h3>
+                        <p>Cortometraje</p>
+                    </div>
+                </div>
+                <!-- PORTFOLIO 6: Rhythm Gangsters -->
+                <a href="./Portfolio/Web_RythmGangsters/index.html">
+                    <div class="proyecto">
+                        <img src="./img/p6.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Rhytm Gangsters</h3>
+                            <p>Página Web</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- PORTFOLIO 7: Más.. -->
+                <a target="_blank" href="https://www.canva.com/design/DAF1FjZ4S0E/_SShZEMyjcMyRgS0f3g3bw/edit?utm_content=DAF1FjZ4S0E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                    <div class="proyecto">
+                        <img src="./img/pextra.jpg" alt="">
+                        <div class="overlay">
+                            <h3>EXTRAS</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <!-- Placeholder indica el texto por defecto que se sobreescribirá, required indica que es obligatorio rellenarlo, type indica el tipo que es -->
+                <div class="col">
+                    <!-- Código sacado de formsubmit que tiene como objetivo enviar el correo a mi correo electrónico -->
+                    <form action="https://formsubmit.co/alferez.contact@gmail.com" method="POST">
+                        <label>
+                            <input type="text" placeholder="Nombre" required>
+                        </label>
+                        <input type="text" placeholder="Número de teléfono">
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="text" placeholder="Tema" required>
+                        <textarea name="" id="" cols="30" rows="7" placeholder="Mensaje" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col">
+                    <a target="_blank"
+                        href="https://www.google.es/maps/place/C.+Cruz+del+Carnero,+Vicálvaro,+28032+Madrid/@40.4013297,-3.6058184,18z/data=!4m6!3m5!1s0xd4225697ab98947:0x381b37b44a45da82!8m2!3d40.4012031!4d-3.604598!16s%2Fg%2F11ycydyqq?entry=ttu"><img
+                            src="./img/ubicacion.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <!-- Botón que redirige al inicio de la página -->
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <!-- Redes que funcionan igual que en el inicio -->
+        <div class="redes">
+            <a target="_blank" title=" LinkedIn "
+                href="https://www.linkedin.com/in/alejandro-férez-domingo-662569255/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" title=" Discord " href="#"><i class="fa-brands fa-discord"></i></a>
+            <a target="_blank" title=" Instagram " href="https://www.instagram.com/zheralx_official/"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" title=" Itch.io " href="https://zheralx.itch.io"><i class="fa-brands fa-itch-io"></i></a>
+            <a target="_blank" title=" X-Twitter " href="https://twitter.com/_Alejandro_FD_"><i
+                    class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Enlaza el código JavaScript -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> || Enlaza una librería externa, no se usa en el proyecto por ello está comentada -->
+    <script src="./Main/script.js"></script>
+</body>
+
+</html>
